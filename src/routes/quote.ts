@@ -31,6 +31,7 @@ export function quoteRouter({
         _req: express.Request<{}, {}, QuoteRequestBody>,
         _res: express.Response,
       ) => {
+        _res.status(200).send()
         throw new NotImplementedError('POST /quote/in not implemented')
       },
     ),
